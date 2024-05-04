@@ -1,0 +1,116 @@
+body{
+    background-color: #fff;
+}
+
+/* Font */
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1, p, #game-status, #restart-button, .cell.number{
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    color: #2C3540;
+}
+
+h1{
+    font-size: 50px;
+}
+
+#restart-button {
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 40px;
+    background-color: #2C3540;
+    padding: 10px;
+    color: #D4D9C1;
+    border-radius: 5px;
+}
+
+p, #restart-button {
+    font-size: 18px;
+}
+
+/* Container for the game board */
+#board {
+    background-color: #7D8C84;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+    grid-template-rows: repeat(10, 1fr); 
+    gap: 5px; 
+    border: 5px solid #2C3540; 
+    max-width: 460px; 
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* Styling for each cell on the game board */
+.cell {
+    background-color: #D4D9C1; 
+    border: 1px solid #D4D9C1; 
+    text-align: center; 
+    cursor: pointer; 
+    position: relative; 
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+}
+
+/* Styling for revealed cells */
+.cell.revealed {
+    background-color: #D4D9C1; 
+    background-image: url(../img/pikachu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Styling for flagged cells */
+.cell.flagged {
+    background-color: #7D8C84; 
+    background-image: url(../img/egg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Styling for mine cells */
+.cell.mine {
+    background-color: #04050D; 
+    color: #fff; 
+    background-image: url(../img/voltorb.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Styling for numbers indicating nearby mines */
+.cell.number {
+    color: #000; 
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Hide the game grid and elements when screen is too small*/
+@media (max-width: 500px) {
+    #board {
+        display: none;
+    }
+    #restart-button {
+        display: none;
+    }
+    #play-game-message {
+        display: none;
+    }
+
+    #game-status{
+        display: none;
+    }
+}
+
+/* Show a different message when screen width is right size */
+@media (min-width: 501px) {
+    #screen-too-small-message {
+        display: none;
+        text-align: center;
+    }
+}
