@@ -141,7 +141,7 @@ function checkGameOver() {
     }
     if (allCellsRevealed) {
         gameOver = true;
-        document.getElementById('game-status').innerText = 'Congratulations! You won!';
+        document.getElementById('game-status').innerText = 'Congratulations! You\'re the new Poke\'Sweeper Champion!';
     }
 }
 
