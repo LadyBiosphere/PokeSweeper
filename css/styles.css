@@ -94,6 +94,21 @@ p, #restart-button, #game-status {
     margin: 1em;
 }
 
+#screen-too-small-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+#screen-too-small-message{
+    border: 5px double #2C3540;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* Hide the game grid and elements when screen is too small*/
 @media (max-width: 500px) {
     #board {
@@ -116,5 +131,9 @@ p, #restart-button, #game-status {
     #screen-too-small-message {
         display: none;
         text-align: center;
+    }
+
+    #screen-too-small-img{
+        display: none;
     }
 }
