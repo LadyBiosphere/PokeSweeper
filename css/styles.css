@@ -41,7 +41,8 @@ p, #restart-button, #game-status {
     grid-template-rows: repeat(10, 1fr); 
     gap: 5px; 
     border: 5px solid #2C3540; 
-    max-width: 460px; 
+/*    max-width: 460px; */
+    max-width: 470px;
     margin: 0 auto;
     border-radius: 5px;
 }

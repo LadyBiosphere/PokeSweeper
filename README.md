@@ -4,7 +4,7 @@
 # PokeSweeper
 A Pokemon themed version of Minesweeper, inspired by Pokemon Yellow.
 
-######Updated: 11 May 2024.
+######Updated: 11 June 2024.
 
 Expected functionality:
 - This is a basic game with basic minesweeper functionality.
